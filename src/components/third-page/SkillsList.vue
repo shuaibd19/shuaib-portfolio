@@ -7,9 +7,9 @@
       v-for="skill in skills"
       :key="skill.id"
     >
-      <router-link :to="{ name: 'detail-skill', params: { skill: skill } }">
-        <img :src="getImgUrl(skill.pic)" :alt="skill.name" />
-      </router-link>
+      <!-- <router-link :to="{ name: 'detail-skill', params: { skill: skill } }"> -->
+      <img :src="getImgUrl(skill.pic)" :alt="skill.name" />
+      <!-- </router-link> -->
     </kinesis-element>
   </kinesis-container>
 </template>
@@ -84,7 +84,7 @@ export default {
 
 .skill :hover {
   transform: scale(1.1);
-  cursor: pointer;
+  /* cursor: pointer; */
   border: none;
 }
 
