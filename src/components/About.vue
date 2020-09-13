@@ -50,8 +50,9 @@ export default {}
 
 <style scoped>
 .gerbej {
-  z-index: 99;
-  height: 40vh;
+  max-width: 1980px;
+  /* z-index: 99; */
+  height: 60vh;
   background-color: #efc3e6;
   opacity: 80%;
   display: flex;
