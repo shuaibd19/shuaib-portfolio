@@ -9,9 +9,11 @@
     <a :href="insta"
       ><img class="links third" src="@/assets/instagram.svg" alt="instagram"
     /></a>
-    <!-- <a href="@/assets/resume.png">
-      <img class="links fourth" src="@/assets/instagram.svg" alt="instagram" />
-    </a> -->
+    <a
+      href="https://raw.githubusercontent.com/shuaibd19/shuaib-portfolio/master/src/assets/resume.png"
+    >
+      <img class="links fourth" src="@/assets/resume.svg" alt="resume" />
+    </a>
   </div>
 </template>
 
@@ -67,16 +69,16 @@ export default {
         },
         '<.6'
       )
-      // tl.to(
-      //   '.fourth',
-      //   {
-      //     opacity: 1,
-      //     scale: 1,
-      //     duration: 0.3,
-      //     ease: 'bounce.out'
-      //   },
-      //   '<.6'
-      // )
+      tl.to(
+        '.fourth',
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.3,
+          ease: 'bounce.out'
+        },
+        '<.6'
+      )
       return tl
     }
   },
