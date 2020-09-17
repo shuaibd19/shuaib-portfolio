@@ -18,6 +18,7 @@ export default {}
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 50px;
 }
 
 h2 {

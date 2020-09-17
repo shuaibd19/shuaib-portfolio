@@ -1,6 +1,6 @@
 <template>
   <kinesis-container class="section shuaib">
-    <kinesis-element type="depth_inv" :strength="20">
+    <kinesis-element type="depth_inv" :strength="strengt">
       <img src="@/assets/portrait.svg" alt="logo"
     /></kinesis-element>
   </kinesis-container>
@@ -10,6 +10,11 @@
 import gsap from 'gsap'
 let masterTL = gsap.timeline()
 export default {
+  data() {
+    return {
+      strengt: 20
+    }
+  },
   methods: {
     shuaibTL() {
       let tl = gsap.timeline()
@@ -20,6 +25,12 @@ export default {
         ease: 'back.out'
       })
       return tl
+    },
+    slowSpeed() {
+      let x = window.matchMedia('(max-width: 480px)')
+      if (x.matches) {
+        this.strengt = 10
+      }
     }
   },
   mounted() {

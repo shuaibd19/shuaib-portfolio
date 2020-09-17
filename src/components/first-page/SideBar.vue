@@ -1,14 +1,14 @@
 <template>
   <div class="side-bar links zero">
-    <a :href="github"
-      ><img class="links first" src="@/assets/github.svg" alt="github"
-    /></a>
-    <a :href="linkedin"
-      ><img class="links second" src="@/assets/linkedin.svg" alt="linkedin"
-    /></a>
-    <a :href="insta"
-      ><img class="links third" src="@/assets/instagram.svg" alt="instagram"
-    /></a>
+    <a :href="github">
+      <img class="links first" src="@/assets/github.svg" alt="github" />
+    </a>
+    <a :href="linkedin">
+      <img class="links second" src="@/assets/linkedin.svg" alt="linkedin" />
+    </a>
+    <a :href="insta">
+      <img class="links third" src="@/assets/instagram.svg" alt="instagram" />
+    </a>
     <a
       href="https://raw.githubusercontent.com/shuaibd19/shuaib-portfolio/master/src/assets/resume.png"
     >

@@ -7,37 +7,13 @@
     <div id="main" class="col">
       <!-- <article>Article</article>
       <nav>nav</nav>
-      <aside>Aside</aside> -->
-      <div class="row first">
-        <carousel>
-          <slide>
-            <img
-              class="arf"
-              src="https://raw.githubusercontent.com/shuaibd19/images/master/elektrik%20eel%20artists.PNG?token=AMLACISV3NQEUH7F57RKFGS7LZJ2K"
-              alt=""
-            />
-          </slide>
-          <slide>
-            <img
-              class="arf"
-              src="https://raw.githubusercontent.com/shuaibd19/images/master/elektrik%20eel%20landing.PNG?token=AMLACIQUWTSMNIEINN35PGS7LZJ2W"
-              alt=""
-            />
-          </slide>
-          <slide>
-            <img
-              class="arf"
-              src="https://raw.githubusercontent.com/shuaibd19/images/master/elektrik%20eel%20payments.PNG?token=AMLACIVZZKSI3IE3T4CDBSK7LZJ3A"
-              alt=""
-            />
-          </slide>
-        </carousel>
-      </div>
+      <aside>Aside</aside>-->
+      <div class="row first"></div>
     </div>
     <footer>
-      <router-link class="router" :to="{ name: 'portfolio' }"
-        ><h1>Go Back</h1></router-link
-      >
+      <router-link class="router" :to="{ name: 'portfolio' }">
+        <h1>Go Back</h1>
+      </router-link>
     </footer>
   </div>
 </template>

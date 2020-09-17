@@ -3,6 +3,7 @@
     <FrontPage class="skengdo row" />
     <About class="skengdo row" />
     <SkillsPage class="row" />
+    <ExampleCarousel class="row" />
     <Contact class="row" />
     <div class="credit">
       I customized the wicked cool background on my homepage at
@@ -16,12 +17,14 @@ import FrontPage from '@/components/FrontPage.vue'
 import SkillsPage from '@/components/SkillsPage.vue'
 import About from '@/components/About.vue'
 import Contact from '@/components/Contact.vue'
+import ExampleCarousel from '@/components/ExampleCarousel.vue'
 export default {
   components: {
     FrontPage,
     SkillsPage,
     About,
-    Contact
+    Contact,
+    ExampleCarousel
   }
 }
 </script>

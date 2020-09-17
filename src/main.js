@@ -7,7 +7,8 @@ import VueKinesis from 'vue-kinesis'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import VueCarousel from 'vue-carousel'
+import Eagle from 'eagle.js'
+import 'animate.css'
 import Vuelidate from 'vuelidate'
 
 library.add(faUserSecret)
@@ -16,7 +17,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.use(VueAnimate)
 Vue.use(VueKinesis)
-Vue.use(VueCarousel)
+Vue.use(Eagle)
 Vue.use(Vuelidate)
 
 // Vue.use(vue)

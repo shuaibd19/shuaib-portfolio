@@ -19,11 +19,11 @@
         <div class="circle circle-purple2"></div>
       </kinesis-element>
       <kinesis-element axis="y" :strength="85">
-        <div class="circle circle-purple3"></div
-      ></kinesis-element>
+        <div class="circle circle-purple3"></div>
+      </kinesis-element>
       <kinesis-element axis="y" :strength="100">
-        <div class="circle circle-purple4"></div
-      ></kinesis-element>
+        <div class="circle circle-purple4"></div>
+      </kinesis-element>
     </kinesis-container>
   </div>
 </template>
