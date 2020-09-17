@@ -1,20 +1,28 @@
 <template>
-  <div class="side-bar links zero">
-    <a :href="github">
-      <img class="links first" src="@/assets/github.svg" alt="github" />
-    </a>
-    <a :href="linkedin">
-      <img class="links second" src="@/assets/linkedin.svg" alt="linkedin" />
-    </a>
-    <a :href="insta">
-      <img class="links third" src="@/assets/instagram.svg" alt="instagram" />
-    </a>
-    <a
-      href="https://raw.githubusercontent.com/shuaibd19/shuaib-portfolio/master/src/assets/resume.png"
-    >
-      <img class="links fourth" src="@/assets/resume.svg" alt="resume" />
-    </a>
-  </div>
+  <kinesis-container class="side-bar links zero">
+    <kinesis-element type="translate" :strength="3">
+      <a :href="github">
+        <img class="links first" src="@/assets/github.svg" alt="github" />
+      </a>
+    </kinesis-element>
+    <kinesis-element type="translate" :strength="-3">
+      <a :href="linkedin">
+        <img class="links second" src="@/assets/linkedin.svg" alt="linkedin" />
+      </a>
+    </kinesis-element>
+    <kinesis-element type="translate" :strength="3">
+      <a :href="insta">
+        <img class="links third" src="@/assets/instagram.svg" alt="instagram" />
+      </a>
+    </kinesis-element>
+    <kinesis-element type="translate" :strength="-3">
+      <a
+        href="https://raw.githubusercontent.com/shuaibd19/shuaib-portfolio/master/src/assets/resume.png"
+      >
+        <img class="links fourth" src="@/assets/resume.svg" alt="resume" />
+      </a>
+    </kinesis-element>
+  </kinesis-container>
 </template>
 
 <script>
