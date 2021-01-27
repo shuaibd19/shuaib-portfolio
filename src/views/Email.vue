@@ -1,6 +1,6 @@
 <template>
-  <div class="contains3">
-    <div class="grand-child girl">
+  <kinesis-container class="contains3">
+    <kinesis-element type="depth" :strength="5" class="grand-child girl">
       <form class="contact-form" @submit.prevent="sendEmail">
         <div class="col">
           <!-- <div class="row mb-5"><h2>Send me a message</h2></div> -->
@@ -30,9 +30,7 @@
               <p class="text-secondary">Email is required</p>
             </div>
             <div v-if="!$v.email.email" class="row p-3">
-              <p class="text-danger">
-                Please enter a valid email address
-              </p>
+              <p class="text-danger">Please enter a valid email address</p>
             </div>
           </div>
           <div class="row form-group">
@@ -59,15 +57,13 @@
               Submit
             </button>
           </div>
-          <!-- <div class="row back">
-            <router-link class="router" :to="{ name: 'portfolio' }"
-              ><h1>Go Back</h1></router-link
-            >
-          </div> -->
+          <router-link class="router row back" :to="{ name: 'portfolio' }"
+            ><h1 class="pen">Go Back</h1></router-link
+          >
         </div>
       </form>
-    </div>
-  </div>
+    </kinesis-element>
+  </kinesis-container>
 </template>
 
 <script>
@@ -124,6 +120,7 @@ export default {
     rgba(156, 137, 184, 1) 0%,
     rgba(239, 195, 230, 1) 100%
   ); */
+  padding-top: 10%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -135,6 +132,8 @@ img {
 }
 
 .grand-child {
+  /* background-color: #e4d1ce94; */
+  border-radius: 5%;
   padding: 10%;
   height: 55vh;
   display: flex;
@@ -146,6 +145,20 @@ img {
 .girl {
   width: 70%;
   margin-left: 2%;
+}
+
+.back {
+  margin-top: 5%;
+  text-decoration: none;
+  /* position: fixed; */
+  /* bottom: 0%;
+  right: 10%; */
+  color: black;
+  justify-content: center;
+}
+
+.pen {
+  font-size: 2em;
 }
 
 /* h2 {
@@ -183,11 +196,15 @@ textarea {
 
 @media only screen and (min-device-width: 1000px) and (max-device-height: 1000px) and (-webkit-min-device-pixel-ratio: 2) {
   .contains3 {
-    height: 90vh;
+    height: 130vh;
   }
 
   .grand-child {
-    height: 80vh;
+    height: 100vh;
+  }
+
+  .back {
+    margin-top: 10%;
   }
 }
 

@@ -1,8 +1,10 @@
 <template>
   <div class="contains3">
-    <router-link :to="{ name: 'email' }" class="row mb-5"
-      ><div><h2>Send me a message</h2></div></router-link
-    >
+    <router-link :to="{ name: 'email' }" class="row mb-5">
+      <div>
+        <h2>Send me a message</h2>
+      </div>
+    </router-link>
   </div>
 </template>
 
